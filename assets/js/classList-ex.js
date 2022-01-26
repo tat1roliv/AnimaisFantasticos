@@ -1,9 +1,17 @@
 // Adicione a classe ativo a todos os itens do menu
-const menu = document.querySelector('.menu');
-menu.classList.add('ativo');
+const menu = document.querySelectorAll('.menu a');
 
-// Remove a classe ativo de todos os itens do menu e mantenha ape
-menu.classList.remove('ativo');
+menu.forEach((item)=>{
+    item.classList.add('ativo');
+})
+
+
+// Remove a classe ativo de todos os itens do menu e manter no 1o
+menu.forEach((item)=>{
+    item.classList.remove('ativo');
+})
+menu[0].classList.add('ativo');
+
 
 // Verifique se as imagens possuem o atributo alt
 const imagens = document.querySelectorAll('img');
@@ -35,5 +43,5 @@ console.log(verificaAlt(imagens));
 
 // Modifique o href do link externo no menu
 let linkExtMenu = document.querySelectorAll('[href^="http"]');
-linkExtMenu = "#linkalternativo";
+linkExtMenu = 'linkalternativo';
 console.log(linkExtMenu);
