@@ -21,6 +21,7 @@ linksInternos.forEach( (link) => {
 
 
 // Selecione todos os elementos do site começando a partir do body,  ao clique mostre exatamente quais elementos estão sendo clicados
+/*
 const elementosSite = document.querySelectorAll('body *');
 
 function exibeElemento(e){
@@ -31,15 +32,14 @@ function exibeElemento(e){
 elementosSite.forEach( (elemento) => {
     elemento.addEventListener('click', exibeElemento);
 })
-
+*/
 
 
 // Utilizando o código anterior, ao invés de mostrar no console, remova o elemento que está sendo clicado
 const elementosSite = document.querySelectorAll('body *');
 
 function removeElemento(e){
-    const currentTarget = e.currentTarget; // this
-    currentTarget.remove();
+    e.currentTarget.remove(); 
 }
 
 elementosSite.forEach( (elemento) => {
