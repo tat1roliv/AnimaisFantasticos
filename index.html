@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais Fantásticos | Template project using HTML, CSS and JavaScript ES6</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        document.documentElement.className += " js";//prevent disabled js
+    </script>
+    
 </head>
 <body>
 
@@ -20,21 +25,19 @@
 
     <section class="grid-section animais" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li><img src="assets/img/imagem1.jpg" alt="animal"></li>
             <li><img src="assets/img/imagem2.jpg" alt="animal"></li>
             <li><img src="assets/img/imagem3.jpg" alt="animal"></li>
             <li><img src="assets/img/imagem4.jpg" alt="animal"></li>
             <li><img src="assets/img/imagem5.jpg" alt="animal"></li>
-            <li><img src="assets/img/imagem6.jpg" ></li>
+            <li><img src="assets/img/imagem6.jpg" alt="animal"></li>
         </ul>
-        <div class="animais-descricao">
+        <div class="animais-descricao js-tabcontent">
             <!--animal1-->
-            <section>
+            <section class="ativo">
                 <h2>Raposa</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed dolorem culpa a molestiae voluptate!</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
 
@@ -49,13 +52,10 @@
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>
             <!--animal3-->
             <section>
                 <h2>Urso</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
-
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed dolorem culpa a molestiae voluptate!</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
@@ -66,10 +66,6 @@
             <section>
                 <h2>Lobo</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed dolorem culpa a molestiae voluptate!</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>   
@@ -87,10 +83,6 @@
             <!--animal5-->
             <section>
                 <h2>Leão</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed dolorem culpa a molestiae voluptate!</p>
-
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
@@ -141,7 +133,7 @@
     <!--script src="assets/js/eventos.js"></!--script-->
     <!--script src="assets/js/eventos-ex.js"></!--script-->
     <!--script src="assets/js/traversing-e-manipulacao.js"></!script-->
-    <script src="assets/js/traversing-e-manipulacao-ex.js"></script>
+    <!--script src="assets/js/traversing-e-manipulacao-ex.js"></!--script-->
 
 </body>
 </html>
