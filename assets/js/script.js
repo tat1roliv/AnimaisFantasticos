@@ -57,3 +57,35 @@ function initAccordion(){
 
 initAccordion();
 
+
+
+
+
+/* scroll suave */
+
+function initScrollSuave(){
+
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"');
+
+    function scrollToSection(e){
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute('href');
+        const section = document.querySelector(href);
+    
+       // const sectionTop = section.offsetTop;
+       // window.scrollTo(0, sectionTop);
+    
+       section.scrollIntoView({
+           behavior: 'smooth',
+           block: 'start',
+       });
+    
+    }
+    
+    linksInternos.forEach((element) => {
+        element.addEventListener('click', scrollToSection);
+    });
+
+}
+
+initScrollSuave();
