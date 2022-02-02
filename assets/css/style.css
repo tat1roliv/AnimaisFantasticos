@@ -303,3 +303,19 @@ body {
         max-height: 200px;
     }
 }
+
+
+
+/* scroll animation */
+
+.js .js-scroll{
+    opacity: 0;
+    transform: translate3d(-30px,0,0);
+}
+
+
+.js .js-scroll.ativa{
+    opacity: 1;
+    transition: .3s;
+    transform: translate3d(0px,0,0);
+}

@@ -90,3 +90,40 @@ function initScrollSuave(){
 }
 
 initScrollSuave();
+
+
+
+
+
+/* scroll animation */
+
+const sections = document.querySelectorAll('.js-scroll');
+
+function initAnimacaoScroll(){
+
+    if (sections.length){
+
+        const windowMetade =  window.innerHeight * 0.6;
+    
+        function animaScroll(){
+            sections.forEach( (section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const isSectionVisible = (sectionTop - windowMetade ) < 0;
+        
+                if (isSectionVisible){
+                    section.classList.add('ativa');
+                } else {
+                    section.classList.remove('ativa');
+                }
+            })
+        }
+        
+        animaScroll();
+        
+        window.addEventListener('scroll', animaScroll);
+    }
+    
+
+}
+
+initAnimacaoScroll();
