@@ -62,6 +62,7 @@ initAccordion();
 
 
 /* scroll suave */
+/*chrome + firefox*/
 
 function initScrollSuave(){
 
